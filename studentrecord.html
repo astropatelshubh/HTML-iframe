@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Student Record</title>
+</head>
+
+<body bgcolor = "lightgrey" text = "black">
+  <form name="student" method="POST" style="font-family: courier; font-size: 20px; font-weight: 500; margin-top: 20px; margin-left: 30px;" action="assignment2.php">
+  <label for="fname">Student Full Name:</label>
+  <input style="font-family: courier; font-size: 20px" size="25px" type="text" id="fname" name="fname">
+  <label style="margin: 0 40px 0 180px" for="fname">Gender:</label>
+  <label for="male">Male</label>
+  <input style="margin-left: 27px" type="radio" id="male" name="gender" value="male">
+  <br /><br />
+  <label for="lname">Student Number:</label>
+  <input maxlength="9" style="font-family: courier; font-size: 20px" size="10px" type="text" id="id" name="id">
+  <label style="margin-left: 530px" for="male">Female</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <p>Which Assignment(s) from the course outline have you completed already ?</p>
+  <input style="margin-left: 120px; font-family: courier; font-size: 20px" type="checkbox" id="assignment1" name="assignment1" value="Assignment 1">
+  <label for="Assignment1">Assignment #1</label>
+  <input style="margin-left: 60px; font-family: courier; font-size: 20px" type="checkbox" id="assignment4" name="assignment4" value="Assignment 4">
+  <label for="Assignment4">Assignment #4</label><br />
+  <input style="margin-left: 120px; font-family: courier; font-size: 20px" type="checkbox" id="assignment2" name="assignment2" value="Assignment 2">
+  <label for="Assignment2">Assignment #2</label>
+  <input style="margin-left: 60px; font-family: courier; font-size: 20px" type="checkbox" id="assignment5" name="assignment5" value="Assignment 5">
+  <label for="Assignment5">Assignment #5</label><br />
+  <input style="margin-left: 120px; font-family: courier; font-size: 20px" type="checkbox" id="assignment3" name="assignment3" value="Assignment 3">
+  <label for="Assignment3">Assignment #3</label>
+  <input style="margin-left: 60px; font-family: courier; font-size: 20px" type="checkbox" id="assignment6" name="assignment6" value="Assignment 6">
+  <label for="Assignment6">Assignment #6</label>
+  <p>The following below are all the topics that we will be covering the semester.<br />Select the topic(s) that you haven't fully understood yet.</p>
+  <select style="margin-left: 120px; font-family: courier; font-size: 20px" id="list" name="list">
+    <option value="HTML">HTML</option>
+    <option value="BASIC XHTML" selected>BASIC XHTML</option>
+    <option value="LINKS & LISTS">LINKS & LISTS</option>
+    <option value="TABLES">TABLES</option>
+    <option value="FRAMES">FRAMES</option>
+    <option value="FORMS">FORMS</option>
+    <option value="DHTML & CSS">DHTML & CSS</option>
+    <option value="JAVASCRIPT OBJECTS & EVENTS">JAVASCRIPT OBJECTS & EVENTS</option>
+  </select>
+  <p>General Comments:</p>
+  <textarea name="message" rows="8" cols="130"></textarea>
+  <p>Please Enter your password in order to submit the form:</p>
+  <label for="pass">Password:</label>
+  <input style="font-family: courier; font-size: 20px" size="15px" type="password" id="pass" name="pass">
+  <button style="margin-left: 800px; font-family: courier; font-size: 20px" type="submit" name="Submit" class="signupbtn">Submit</button>
+  <button style="font-family: courier; font-size: 20px" type="reset" class="cancelbtn">Reset</button>
+</form>
+</body>
+</html>
